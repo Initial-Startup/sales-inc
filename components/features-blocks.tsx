@@ -1,4 +1,4 @@
-export default function FeaturesBlocks() {
+export default function FeatureVideoFolloUp() {
   return (
     <section className="relative">
 
@@ -16,10 +16,10 @@ export default function FeaturesBlocks() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-none lg:max-w-none">
 
             {/* 1st item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
@@ -36,7 +36,7 @@ export default function FeaturesBlocks() {
             </div>
 
             {/* 2nd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
@@ -52,7 +52,7 @@ export default function FeaturesBlocks() {
             </div>
 
             {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
@@ -65,11 +65,11 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Hubspot</h4>
-              <p className="text-gray-600 text-center">Connect with hubspot and make a difference with your regular flow.</p>
+              <p className="text-gray-600 text-center">Connect with Hubspot and make a difference with your regular flow.</p>
             </div>
 
             {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
@@ -84,7 +84,6 @@ export default function FeaturesBlocks() {
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Customizable APIs</h4>
               <p className="text-gray-600 text-center">Develop custom integrations to connect with your existing business systems and tools.</p>
             </div>
-
 
           </div>
 
