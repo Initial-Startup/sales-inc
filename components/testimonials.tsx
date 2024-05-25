@@ -89,7 +89,7 @@ export default function Testimonials() {
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">Darya Finger</cite>
                 <div className="text-gray-600">
-                  <span>CEO & Co-Founder</span> <a className="text-blue-600 hover:underline" href="#0">@Dropbox</a>
+                  <span>CEO & Co-Founder</span> <a className="text-blue-600 hover:underline" href="#0">@Arya Choudhury</a>
                 </div>
               </div>
 
