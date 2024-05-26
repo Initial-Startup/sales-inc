@@ -42,8 +42,7 @@ export default function Newsletter() {
 
                 {/* CTA form */}
                 <form className="max-w-lg mx-auto p-8 bg-white rounded shadow-md">
-      <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
-      
+                        
       <div className="mb-4">
         <label className="block text-gray-700 mb-2" htmlFor="name">Name</label>
         <input
@@ -63,19 +62,6 @@ export default function Newsletter() {
           type="email"
           name="email"
           id="email"
-          // value={}
-          // onChange={}
-          className="w-full px-3 py-2 border rounded"
-          required
-        />
-      </div>
-      
-      <div className="mb-4">
-        <label className="block text-gray-700 mb-2" htmlFor="phone">Phone Number</label>
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
           // value={}
           // onChange={}
           className="w-full px-3 py-2 border rounded"
