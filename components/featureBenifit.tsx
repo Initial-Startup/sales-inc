@@ -5,6 +5,9 @@ import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import FeaturesBg from '@/public/images/features-bg.png'
 import FeaturesElement from '@/public/images/features-element.png'
+import Engagement from '@/public/images/engagement.jpg'
+import Conversation from '@/public/images/conversation.jpg'
+import Effciency from '@/public/images/impoveEffciency.jpg'
 
 export default function FeatureBenifit() {
   
@@ -115,7 +118,7 @@ export default function FeatureBenifit() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={Engagement} width={500} height="462" alt="Features bg" />
                       <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
                     </div>
                   </Transition>
@@ -134,7 +137,7 @@ export default function FeatureBenifit() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={Conversation} width={500} height="462" alt="Features bg" />
                       <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
                     </div>
                   </Transition>
@@ -153,7 +156,7 @@ export default function FeatureBenifit() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={Effciency} width={500} height="462" alt="Features bg" />
                       <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
                     </div>
                   </Transition>

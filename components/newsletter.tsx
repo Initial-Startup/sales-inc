@@ -37,71 +37,25 @@ export default function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Elevate Your Communication</h3>
-                {/* <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p> */}
+                <h3 className="h3 text-white mb-2">Want more tutorials & guides?</h3>
+                <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p>
 
                 {/* CTA form */}
-                <form className="max-w-lg mx-auto p-8 bg-white rounded shadow-md">
-      <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
-      
-      <div className="mb-4">
-        <label className="block text-gray-700 mb-2" htmlFor="name">Name</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          // value={}
-          // onChange={}
-          className="w-full px-3 py-2 border rounded"
-          required
-        />
-      </div>
-      
-      <div className="mb-4">
-        <label className="block text-gray-700 mb-2" htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          // value={}
-          // onChange={}
-          className="w-full px-3 py-2 border rounded"
-          required
-        />
-      </div>
-      
-      <div className="mb-4">
-        <label className="block text-gray-700 mb-2" htmlFor="phone">Phone Number</label>
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
-          // value={}
-          // onChange={}
-          className="w-full px-3 py-2 border rounded"
-          required
-        />
-      </div>
-      
-      <div className="mb-6">
-        <label className="block text-gray-700 mb-2" htmlFor="comment">Comment</label>
-        <textarea
-          name="comment"
-          id="comment"
-          // value={}
-          // onChange={}
-          className="w-full px-3 py-2 border rounded"
-          // rows="4"
-          required
-        ></textarea>
-      </div>
-      
-      <div className="text-center">
-        <button type="submit" className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-          Submit
-        </button>
-      </div>
-    </form>
+                <form className="w-full lg:w-auto">
+                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
+                    <input type="text" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your name…" aria-label="Your name…" />
+                  </div>
+                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
+                    <input type="email" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" />
+                  </div>
+                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
+                    <input type="text" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your comments…" aria-label="Your comments…" />
+                  </div>
+                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
+                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="#0">Submit</a>
+                  </div>
+                </form>
+
               </div>
 
             </div>
