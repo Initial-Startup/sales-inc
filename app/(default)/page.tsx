@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Simple',
-  description: 'Page description',
+  title: 'Text to Video Email Ai',
+  description: 'With Text to video Email Ai, Convert any text into video email with user face . Turn Text prompts & documents make Professional looking Video Email in just a few clicks .',
 }
 
 import Hero from '@/components/hero'
