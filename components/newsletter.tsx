@@ -1,4 +1,68 @@
+'use client'
+import { useState } from 'react'
+import axios, { AxiosResponse } from 'axios';
+import { headers } from 'next/headers';
+
 export default function Newsletter() {
+
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [error, setError] = useState([]);
+  
+
+
+  // name handel state
+  function handelname (e: any) {
+    setName(e.target.value)
+  }
+
+  // email handel state
+  function handelemail (e: any) {
+    setEmail(e.target.value)
+  }
+
+  // message handel state
+  const handelmessage =(e: any)=> {
+    setMessage(e.target.value)
+  }
+
+        // submit handel function
+    const handelsubmit = async (e: any) => {
+      e.preventDefault();
+      const data = {
+        name: name,
+        email: email,
+        message: message
+      };
+      console.log(data)
+    
+      try {
+        const res: AxiosResponse = await axios.post('api/hello/contact', data,{
+          headers:{
+            "Content-Type": "application/json",
+          }
+        });
+        // Handle the response here
+        console.log(res);
+        const {message} = await res.data;
+        setError(message);
+        setTimeout(() => {
+          setError([])
+          setName('')
+          setEmail('')
+          setMessage('')
+        },2000)
+     
+
+      } catch (error) {
+        // Handle the error here
+      }
+    };
+
+    
+
+
   return (
     <section id="get-in-touch">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -43,17 +107,20 @@ export default function Newsletter() {
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <input type="text" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your name…" aria-label="Your name…" />
+                    <input onChange={handelname} type="text" name='Name' id='Name' className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your name…" aria-label="Your name…" />
                   {/* </div>
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4"> */}
-                    <input type="email" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" />
+                    <input onChange={handelemail} type="email" name='Email' id='Email' className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" />
                   </div>
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
-                    {/* <input type="text" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your comments…" aria-label="Your comments…" /> */}
-                    <textarea className="form-textarea w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your comments…" aria-label="Your comments…" rows={4} />
+                    {/* <input type="text" className="form-textarea w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your comments…" aria-label="Your comments…" /> */}
+                    <textarea onChange={handelmessage} name='Message' id='Message' className="form-textarea w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your comments…" aria-label="Your comments…"/>
                   </div>
                   <div className="flex flex-col sm:flex-row justify-left max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="#0">Submit</a>
+                    <button type='submit' className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" onClick={handelsubmit}>Submit</button>
+                  </div>
+                  <div className="flex flex-col sm:flex-row justify-left max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
+                    <p className='text-white'>{error}</p>
                   </div>
                 </form>
 
