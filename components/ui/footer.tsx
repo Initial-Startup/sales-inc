@@ -3,67 +3,79 @@ import Logo from './logo'
 export default function Footer() {
   return (
     <footer>
-      {/* <div className="max-w-6xl mx-auto px-4 sm:px-6"> */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Top area: Blocks */}
-        {/* <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200"> */}
+        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
 
           {/* 1st block */}
-          {/* <div className="sm:col-span-12 lg:col-span-3">
+          <div className="sm:col-span-12 lg:col-span-3">
             <div className="mb-2">
               <Logo />
             </div>
             <div className="text-sm text-gray-600">
               <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
             </div>
-          </div> */}
+          </div>
 
           {/* 2nd block */}
-          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-gray-800 font-medium mb-2">Integrations</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Web Studio</a>
+                <a href="#platformIntegrations" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Salesforce</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</a>
+                <a href="#platformIntegrations" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Dynamics 365</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Programming Forms</a>
+                <a href="#platformIntegrations" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hubspot</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</a>
+                <a href="#platformIntegrations" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Customizable APIs</a>
               </li>
             </ul>
-          </div> */}
+          </div>
 
           {/* 3rd block */}
-          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-gray-800 font-medium mb-2">Avtar Creation</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Documentation</a>
+                <a href="#Avtar" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Custom Trainig</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Tutorials & Guides</a>
+                <a href="#Avtar" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Template Options</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>
+                <a href="#Avtar" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Personalization</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Partners</a>
+                <a href="#Avtar" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Ai-Powered</a>
               </li>
             </ul>
-          </div> */}
+          </div>
 
           {/* 4th block */}
-          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-gray-800 font-medium mb-2">Benefits</h6>
+            <ul className="text-sm">
+              <li className="mb-2">
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Increase Engagement</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Higher Conversion Rates</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Improve Efficiency</a>
+              </li>
+            </ul>
+          </div>
+
+
+          {/* 5th block  */}
+
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Company</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -82,9 +94,11 @@ export default function Footer() {
                 <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Privacy Policy</a>
               </li>
             </ul>
-          </div> */}
+          </div>
 
-          {/* 5th block */}
+          
+
+          {/* 6th block */}
           {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
             <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
             <p className="text-sm text-gray-600 mb-4">Get the latest news and articles to your inbox every month.</p>
@@ -101,24 +115,24 @@ export default function Footer() {
                       </svg>
                     </button>
                   </div> */}
-                  {/* Success message */}
-                  {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
-                {/* </div>
+          {/* Success message */}
+          {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
+          {/* </div>
               </div>
             </form>
-          </div>
+          </div> */}
 
-        </div> */}
+        </div>
 
         {/* Bottom area */}
-        {/* <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200"> */}
+        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
 
           {/* Social as */}
-          {/* <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+          <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
               <a href="#0" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
+                  <path d="M13.063 9L16.558 13.475 20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
                 </svg>
               </a>
             </li>
@@ -136,14 +150,21 @@ export default function Footer() {
                 </svg>
               </a>
             </li>
-          </ul> */}
+            <li className="ml-4">
+              <a href="#0" className="mt-2 flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Instagram">
+                <svg className="w-7 h-7 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.333 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.333-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.013-4.947.072-1.473.066-2.782.349-3.873 1.44-1.091 1.091-1.374 2.4-1.44 3.873-.059 1.28-.072 1.688-.072 4.947s.013 3.667.072 4.947c.066 1.473.349 2.782 1.44 3.873 1.091 1.091 2.4 1.374 3.873 1.44 1.28.059 1.688.072 4.947.072s3.667-.013 4.947-.072c1.473-.066 2.782-.349 3.873-1.44 1.091-1.091 1.374-2.4 1.44-3.873.059-1.28.072-1.688.072-4.947s-.013-3.667-.072-4.947c-.066-1.473-.349-2.782-1.44-3.873-1.091-1.091-2.4-1.374-3.873-1.44-1.28-.059-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.204 0-4-1.796-4-4s1.796-4 4-4 4 1.796 4 4-1.796 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
 
           {/* Copyrights note */}
-          {/* <div className="text-sm text-gray-600 mr-4">&copy; Cruip.com. All rights reserved.</div> */}
+          <div className="text-sm text-gray-600 mr-4">&copy; VideoEmailAi.com. All rights reserved.</div>
 
-        {/* </div> */}
+        </div>
 
-      {/* </div> */}
+      </div>
     </footer>
   )
 }
