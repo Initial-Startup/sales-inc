@@ -9,6 +9,7 @@ export default function Newsletter() {
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [error, setError] = useState([]);
+  const [success, setSuccess] = useState('');
   
 
 
@@ -35,7 +36,6 @@ export default function Newsletter() {
         email: email,
         message: message
       };
-      console.log(data)
     
       try {
         const res: AxiosResponse = await axios.post('api/hello/contact', data,{
@@ -44,10 +44,14 @@ export default function Newsletter() {
           }
         });
         // Handle the response here
-        console.log(res);
         const {message} = await res.data;
+        if(message == 'Message has been sent'){
+          setSuccess(message)
+      }else{
         setError(message);
+      }
         setTimeout(() => {
+          setSuccess('')
           setError([])
           setName('')
           setEmail('')
@@ -105,11 +109,10 @@ export default function Newsletter() {
                 <p className="text-gray-300 text-lg mb-6">Feel free to reach out with any inquiries, comments, or thoughts. Your communication is always welcomed and highly valued.</p>
 
                 {/* CTA form */}
-                <form className="w-full lg:w-auto">
+                <form onSubmit={handelsubmit} className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <input onChange={handelname} type="text" name='Name' id='Name' className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your name…" aria-label="Your name…" />
-                  {/* </div>
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4"> */}
+                   
                     <input onChange={handelemail} type="email" name='Email' id='Email' className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" />
                   </div>
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
@@ -117,10 +120,11 @@ export default function Newsletter() {
                     <textarea onChange={handelmessage} name='Message' id='Message' className="form-textarea w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your comments…" aria-label="Your comments…"/>
                   </div>
                   <div className="flex flex-col sm:flex-row justify-left max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
-                    <button type='submit' className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" onClick={handelsubmit}>Submit</button>
+                    <button type='submit' className="btn text-white bg-blue-600 hover:bg-blue-700 shadow">Submit</button>
                   </div>
                   <div className="flex flex-col sm:flex-row justify-left max-w-xs mx-auto sm:max-w-md lg:mx-0 mt-4">
-                    <p className='text-white'>{error}</p>
+                    <p className='text-red-600'>{error}</p>
+                    <p className='text-green-600'>{success}</p>
                   </div>
                 </form>
 
